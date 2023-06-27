@@ -1,3 +1,0 @@
-# Teis Lebeck
-
-## About
