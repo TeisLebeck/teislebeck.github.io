@@ -124,6 +124,7 @@
 									<p>If you have a question, an idea for a project or proposal for collaboration, feel free to reach out to me.</p>
 									<ul class="actions">
 										<li><a href="https://www.linkedin.com/in/teis-lebeck/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a href="jim@gmail.com" class="icon brands alt fa-envelope" onclick="copyToClipboard(event)"><span class="label">E-mail</span></a></li>
 									</ul>
 								</div>
 							</section>
@@ -169,6 +170,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+  function copyToClipboard(event) {
+    event.preventDefault();
+    const email = event.target.getAttribute("href");
+    navigator.clipboard.writeText(email)
+      .then(() => {
+        alert("Email address copied to clipboard!");
+      })
+      .catch((error) => {
+        console.error("Failed to copy email to clipboard:", error);
+      });
+  }
+	</script>
 
 	</body>
 </html>
