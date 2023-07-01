@@ -122,7 +122,7 @@
 										<h2>Coffee?</h2>
 									</header>
 									<p>If you have a question, an idea for a project or proposal for collaboration, feel free to reach out to me.</p>
-									<ul class="actions">
+									<ul class="contact-method">
 										<li><a href="https://www.linkedin.com/in/teis-lebeck/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 										<li><a href="jim@gmail.com" class="icon brands alt fa-envelope" onclick="copyToClipboard(event)"><span class="label">E-mail</span></a></li>
 									</ul>
@@ -176,7 +176,7 @@
     const email = event.target.getAttribute("href");
     navigator.clipboard.writeText(email)
       .then(() => {
-        alert("Email address copied to clipboard!");
+        alert("E-mail copied to clipboard ✓");
       })
       .catch((error) => {
         console.error("Failed to copy email to clipboard:", error);
