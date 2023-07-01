@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>AI Musikquiz Slideshow</title>
+    <style>
+      body {
+        background-color: #FEC8D8;
+      }
+      .slideshow {
+        position: relative;
+      }
+      .slide {
+        display: none;
+        text-align: center;
+      }
+      .slide img {
+        max-width: 50%;
+      }
+      .slide .title {
+        font-size: 3rem;
+        margin-top: 1rem;
+        color: #FBEE95;
+        font-family: "Caprasimo", sans-serif;
+        -webkit-text-stroke: 2px #000000;
+      }
+      .slide .song-name {
+        font-size: 5rem;
+        font-family: "Caprasimo", sans-serif;
+        color: #FBEE95;
+        -webkit-text-stroke: 2px #000000;
+        margin-top: 1rem;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slideshow">
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094599873514446869/ai_quiz.jpeg.001.jpeg" alt="Slide 1">
+        <div class="song-name">Eksempel på sangtitel</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094557732591382588/johnny_99_air_balloons_18ed626b-2185-4afd-a5b9-bb00a80c06e3.png" alt="Slide 2">
+        <div class="song-name">99 Luftballons</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094361281391239178/johnny_afro-americans_in_front_of_the_eiffel_tower_6e2cffd1-024d-4f0e-b691-bfdcb48becf3.png" alt="Slide 3">
+        <div class="song-name">Ni**as in Paris</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094592701724377159/johnny_a_very_big_man_abd51603-af82-4e97-9de8-95772fd0643b.png" alt="Slide X">
+        <div class="song-name">Stor mand</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094595083778670632/johnny_a_boy_dressed_in_american_flag_clothes_a7e9f896-368a-4496-b0b4-e540f59ce38b.png" alt="Slide X">
+        <div class="song-name">American boy</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094596164994736168/johnny_a_porr_homeless_man_partying_and_dancing_38a29d44-46b6-4408-9503-2c3683dabdcb.png" alt="Slide X">
+        <div class="song-name">Cheap thrills</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094597289315680286/johnny_crime_scene_at_a_dance_floot_police_tape_disco_ball_42b5c8e2-4733-4f8a-9903-6a6b1736f23f.png" alt="Slide X">
+        <div class="song-name">Murder on the dancefloor</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094627407094358146/johnny_a_person_holding_up_their_hand_to_block_sunlight_eb6f7e50-7b38-479d-a9dc-66cd7cd15605.png" alt="Slide X">
+        <div class="song-name">Blinding lights</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094628332697550919/johnny_radioactivity_nuclear_fa71a0a6-d4ba-48e5-9530-0c645191acc6.png" alt="Slide X">
+        <div class="song-name">Radioactive</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094629713462435870/johnny_god_drawing_on_a_whiteboard_long_white_beard_making_a_pl_01ef087f-c470-40d9-8372-73185b4b39fe.png" alt="Slide X">
+        <div class="song-name">God's plan</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094634246808797234/johnny_a_women_standing_among_flames_51607835-0516-49d9-af44-2e3d2d936dd2.png" alt="Slide X">
+        <div class="song-name">Girl on fire</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094638139865321584/johnny_a_heart_on_top_of_a_ladder_1684ac54-af0b-4ca9-822a-e35c01444d97.png" alt="Slide X">
+        <div class="song-name">Higher love</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094634805171343440/johnny_a_wolf_in_a_red_dress_female_5b1db91c-ce5a-454a-b280-a4599d63b7ef.png" alt="Slide X">
+        <div class="song-name">She wolf</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094594063426142228/johnny_arab_african_woman_pilot_in_cockpit_b3e1258b-d005-44bd-99fd-1bd6354d02c1.png" alt="Slide X">
+        <div class="song-name">Flyvende Faduma</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094558129934569482/johnny_can_you_take_dogs_to_heaven_6d3e486c-aa87-45c8-874f-88acb802618f.png" alt="Slide X">
+        <div class="song-name">Himmelhunden</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094635084570710177/johnny_a_field_of_very_green_grass_beautiful_9d353b35-f46b-44f7-8a37-0b8824b58d10.png" alt="Slide X">
+        <div class="song-name">Green green grass</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094636520729747617/johnny_a_man_cutting_down_tall_tree_timber_b2a657eb-8318-4e39-b8ed-6714d58e45da.png" alt="Slide X">
+        <div class="song-name">Timber</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094638999638921216/johnny_a_birthday_cake_on_the_beach_51045487-bdee-4ba6-99a4-0af75bdd85bb.png" alt="Slide X">
+        <div class="song-name">Cake by the ocean</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094638702594097303/johnny_a_hip_hop_panda_1e3b9a4f-46f9-4729-a91a-298581843926.png" alt="Slide X">
+        <div class="song-name">Panda</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094640527934246942/johnny_a_boy_surrounded_by_stars_9dde436c-d4a0-4f50-aa9d-2da9067a8ec7.png" alt="Slide X">
+        <div class="song-name">Starboy</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094641837253349396/johnny_putting_a_ring_on_a_finger_786f3285-8f56-4ac5-99ec-309b4f28e4c0.png" alt="Slide X">
+        <div class="song-name">Single ladies</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094643132940959865/johnny_thermometer_ff8dd3c3-23bd-40e1-afff-53eb49df8318.png" alt="Slide X">
+        <div class="song-name">Temperature</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094643503801319595/johnny_head_spinning_round_e7fd5fdd-c213-4cda-91ca-d42c9810520b.png" alt="Slide X">
+        <div class="song-name">Right round</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094644231362060319/johnny_a_shot_of_liquour_d5f4b37b-1ea9-4196-a83b-1fd01bee40ff.png" alt="Slide X">
+        <div class="song-name">Shots</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094644581557092383/johnny_planet_earth_surrounded_by_hearts_8dfe2fd7-3e31-4ae1-9138-248aafb5ba02.png" alt="Slide X">
+        <div class="song-name">International love</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1094686426731388938/johnny_person_removing_a_mask_95a82a98-f98e-4c68-8108-bd7cfa0c41cd.png" alt="Slide X">
+        <div class="song-name">Mask off</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1095814030939148409/johnny_a_pony_or_small_horse_surrounded_by_hearts_5da1a487-ce5d-4b3c-ab3b-c7faa212b375.png" alt="Slide X">
+        <div class="song-name">Elskovspony</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1095815885983334460/johnny_people_having_a_picnic_on_a_military_fort_4c581afb-85ce-4554-845a-34f73bdaf1ea.png" alt="Slide X">
+        <div class="song-name">Picnic (på kastellet)</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1095817606767849502/johnny_a_cute_small_or_baby_version_of_a_knife_cartoon_eyes_hap_f8958bbb-5405-4139-80e9-b3cdf3975e54.png" alt="Slide X">
+        <div class="song-name">Ung Kniv</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.discordapp.com/attachments/1059412006073016340/1095817647330955274/johnny_a_car_riding_over_bumpy_hills_bouncing_bd3f44a1-a243-4a48-932b-4296992ecc5b.png" alt="Slide X">
+        <div class="song-name">Bumpy ride</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.midjourney.com/bad18780-6f4e-4474-87d6-56186233f438/0_0.png" alt="Slide X">
+        <div class="song-name">The Real Slim Shady</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.midjourney.com/f85badcc-bef6-4f79-8cc6-799ea58d219c/0_2.png" alt="Slide X">
+        <div class="song-name">Red Eyes</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.midjourney.com/4caaf808-0b8a-4b02-9ecf-4c8be45423a4/0_0.png" alt="Slide X">
+        <div class="song-name">Sk8er Boi</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.midjourney.com/f24010ef-fc0d-470a-9101-f91bbf1ac35e/0_0.png" alt="Slide X">
+        <div class="song-name">Sandstorm</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.midjourney.com/cb57da70-9421-4cef-978a-82500a62771a/0_3.png" alt="Slide X">
+        <div class="song-name">Take Me Home, Country Roads</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.midjourney.com/22dd6891-cbc7-4535-a65d-59f8ca01629c/0_2.png" alt="Slide X">
+        <div class="song-name">Mirrors</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.midjourney.com/8dba4af3-c243-4392-98d1-fbb5944cbe06/0_3.png" alt="Slide X">
+        <div class="song-name">Vamos A La Playa</div>
+      </div>
+      <div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.midjourney.com/9815d2d7-5dc2-45f3-a695-03e8da538999/0_1.png" alt="Slide X">
+        <div class="song-name">Thunderstruck</div>
+      </div><div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.midjourney.com/7b8d5c00-b62e-49c5-a499-f3a5daea1b69/0_1.png" alt="Slide X">
+        <div class="song-name">Milkshake</div>
+      </div><div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.midjourney.com/52ca5e96-a430-4c03-8aa2-cd2cf678e596/0_1.png" alt="Slide X">
+        <div class="song-name">Galway Girl</div>
+      </div><div class="slide">
+        <div class="title">AI MUSIKQUIZ</div>
+        <img src="https://cdn.midjourney.com/fe3c19c3-979c-4dd0-89d1-06495394663c/0_0.png" alt="Slide X">
+        <div class="song-name">Søvnløs (Jeg har ik' sovet i et år)</div>
+      </div>
+      <div class="title">AI MUSIKQUIZ</div>
+        <img src="billedelink" alt="Slide X">
+        <div class="song-name">sang</div>
+      </div>
+    </div>
+    <script>
+  let slideIndex = 0;
+  const slides = document.getElementsByClassName("slide");
+  const songNames = document.getElementsByClassName("song-name");
+
+  // Show the song name when the S key is pressed
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "s") {
+      songNames[slideIndex].style.display = "block";
+    }
+  });
+
+  // Hide the song name when the S key is released
+  document.addEventListener("keyup", function(event) {
+    if (event.key === "s") {
+      songNames[slideIndex].style.display = "none";
+    }
+  });
+
+  // Move to the next slide when the Enter key is pressed
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      slideIndex++;
+      if (slideIndex >= slides.length) {
+        slideIndex = 0;
+      }
+      showSlide();
+    }
+  });
+
+  // Move to the previous slide when the left arrow key is pressed
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowLeft") {
+      slideIndex--;
+      if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+      }
+      showSlide();
+    }
+  });
+
+  // Show the initial slide
+  showSlide();
+
+  function showSlide() {
+    // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    // Show the current slide
+    slides[slideIndex].style.display = "block";
+  }
+</script>
+</body>
+</html>
