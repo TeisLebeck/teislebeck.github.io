@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>pydeck</title>
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <script src='https://cdn.jsdelivr.net/npm/@deck.gl/jupyter-widget@~8.8.*/dist/index.js'></script>
+    <style>
+    body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#deck-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#deck-container canvas {
+  z-index: 1;
+  background: none;
+}
+    </style>
+  </head>
+  <body>
+    <div id="deck-container">
+    </div>
+  </body>
+  <script>
+    const container = document.getElementById('deck-container');
+    const jsonInput = {
+  "initialViewState": {
+    "latitude": 53.1075,
+    "longitude": 11.575,
+    "pitch": 50,
+    "zoom": 3
+  },
+  "layers": [
+    {
+      "@@type": "ColumnLayer",
+      "autoHighlight": true,
+      "data": [
+        {
+          "lat": 53.34399,
+          "lng": -6.26719,
+          "name": "Ireland",
+          "scaled_fines": 91334.08,
+          "total_fines": 913340800
+        },
+        {
+          "lat": 49.61167,
+          "lng": 6.13,
+          "name": "Luxembourg",
+          "scaled_fines": 74626.8,
+          "total_fines": 746268000
+        },
+        {
+          "lat": 48.85341,
+          "lng": 2.3488,
+          "name": "France",
+          "scaled_fines": 29229.43,
+          "total_fines": 292294300
+        },
+        {
+          "lat": 41.89193,
+          "lng": 12.51133,
+          "name": "Italy",
+          "scaled_fines": 13490.1096,
+          "total_fines": 134901096
+        },
+        {
+          "lat": 51.509865,
+          "lng": -0.118092,
+          "name": "United Kingdom",
+          "scaled_fines": 6086.18,
+          "total_fines": 60861800
+        },
+        {
+          "lat": 52.52437,
+          "lng": 13.41053,
+          "name": "Germany",
+          "scaled_fines": 5935.6703,
+          "total_fines": 59356703
+        },
+        {
+          "lat": 40.4165,
+          "lng": -3.70256,
+          "name": "Spain",
+          "scaled_fines": 4310.511,
+          "total_fines": 43105110
+        },
+        {
+          "lat": 48.20849,
+          "lng": 16.37208,
+          "name": "Austria",
+          "scaled_fines": 1957.095,
+          "total_fines": 19570950
+        },
+        {
+          "lat": 59.33258,
+          "lng": 18.0649,
+          "name": "Sweden",
+          "scaled_fines": 1623.223,
+          "total_fines": 16232230
+        },
+        {
+          "lat": 52.37403,
+          "lng": 4.88969,
+          "name": "Netherlands",
+          "scaled_fines": 1318.95,
+          "total_fines": 13189500
+        },
+        {
+          "lat": 37.97945,
+          "lng": 23.71622,
+          "name": "Greece",
+          "scaled_fines": 1044.3,
+          "total_fines": 10443000
+        },
+        {
+          "lat": 59.91333,
+          "lng": 10.73889,
+          "name": "Norway",
+          "scaled_fines": 918.125,
+          "total_fines": 9181250
+        },
+        {
+          "lat": 38.72225,
+          "lng": -9.13934,
+          "name": "Portugal",
+          "scaled_fines": 615.4,
+          "total_fines": 6154000
+        },
+        {
+          "lat": 52.22977,
+          "lng": 21.01178,
+          "name": "Poland",
+          "scaled_fines": 326.3866,
+          "total_fines": 3263866
+        },
+        {
+          "lat": 42.69751,
+          "lng": 23.32415,
+          "name": "Bulgaria",
+          "scaled_fines": 323.923,
+          "total_fines": 3239230
+        },
+        {
+          "lat": 55.67594,
+          "lng": 12.56553,
+          "name": "Denmark",
+          "scaled_fines": 241.105,
+          "total_fines": 2411050
+        },
+        {
+          "lat": 50.84655,
+          "lng": 4.35167,
+          "name": "Belgium",
+          "scaled_fines": 166.5499,
+          "total_fines": 1665499
+        },
+        {
+          "lat": 35.18556,
+          "lng": 33.38222,
+          "name": "Cyprus",
+          "scaled_fines": 127.8,
+          "total_fines": 1278000
+        },
+        {
+          "lat": 60.16975,
+          "lng": 24.93837,
+          "name": "Finland",
+          "scaled_fines": 115.08,
+          "total_fines": 1150800
+        },
+        {
+          "lat": 47.49801,
+          "lng": 19.03991,
+          "name": "Hungary",
+          "scaled_fines": 108.7538,
+          "total_fines": 1087538
+        },
+        {
+          "lat": 44.43225,
+          "lng": 26.10626,
+          "name": "Romania",
+          "scaled_fines": 88.735,
+          "total_fines": 887350
+        },
+        {
+          "lat": 59.43696,
+          "lng": 24.75353,
+          "name": "Estonia",
+          "scaled_fines": 30.0604,
+          "total_fines": 300604
+        },
+        {
+          "lat": 54.68715,
+          "lng": 25.27965,
+          "name": "Lithuania",
+          "scaled_fines": 21.45,
+          "total_fines": 214500
+        },
+        {
+          "lat": 45.81501,
+          "lng": 15.98192,
+          "name": "Croatia",
+          "scaled_fines": 21.3495,
+          "total_fines": 213495
+        },
+        {
+          "lat": 64.13548,
+          "lng": -21.89541,
+          "name": "Iceland",
+          "scaled_fines": 19.54,
+          "total_fines": 195400
+        },
+        {
+          "lat": 50.08804,
+          "lng": 14.42076,
+          "name": "Czech Republic",
+          "scaled_fines": 17.8712,
+          "total_fines": 178712
+        },
+        {
+          "lat": 56.94965,
+          "lng": 24.10518,
+          "name": "Latvia",
+          "scaled_fines": 17.825,
+          "total_fines": 178250
+        },
+        {
+          "lat": 48.14816,
+          "lng": 17.10674,
+          "name": "Slovakia",
+          "scaled_fines": 13.06,
+          "total_fines": 130600
+        },
+        {
+          "lat": 35.89972,
+          "lng": 14.51472,
+          "name": "Malta",
+          "scaled_fines": 7.0,
+          "total_fines": 70000
+        },
+        {
+          "lat": 54.15,
+          "lng": -4.48194,
+          "name": "Isle of Man",
+          "scaled_fines": 1.725,
+          "total_fines": 17250
+        },
+        {
+          "lat": 47.13972,
+          "lng": 9.52194,
+          "name": "Liechtenstein",
+          "scaled_fines": 0.41,
+          "total_fines": 4100
+        }
+      ],
+      "elevationScale": 15,
+      "getElevation": "@@=scaled_fines",
+      "getFillColor": [
+        100,
+        200,
+        0,
+        80
+      ],
+      "getPosition": "@@=[lng, lat]",
+      "id": "2d38606a-9cc6-4868-8c96-1a6cfb798d31",
+      "opacity": 3,
+      "pickable": true,
+      "radius": 25000
+    }
+  ],
+  "mapProvider": "carto",
+  "mapStyle": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
+  "views": [
+    {
+      "@@type": "MapView",
+      "controller": true
+    }
+  ]
+};
+    const tooltip = true;
+    const customLibraries = null;
+    const configuration = null;
+
+    const deckInstance = createDeck({
+                  container,
+      jsonInput,
+      tooltip,
+      customLibraries,
+      configuration
+    });
+
+  </script>
+</html>
